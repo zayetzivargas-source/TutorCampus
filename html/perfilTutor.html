@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TutorCampus - Perfil del tutor</title>
+  <link rel="stylesheet" href="../css/stylePerfil.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/png" href="../favicon/favicon.ico">
+
+</head>
+<body>
+
+  <div class="page-wrapper">
+    <main class="login-card">
+
+      <header class="card-header">
+        <h1 class="app-title">TutorCampus</h1>
+      </header>
+
+      <section class="tutor-info" aria-labelledby="tutor-nombre">
+        <img class="tutor-photo" src="../img/tutor.png" alt="Foto del tutor">
+        <div class="tutor-data">
+          <h2 class="tutor-name" id="tutor-nombre"></h2>
+          <p>Materia: </p>
+          <p>Calificación: </p>
+        </div>
+      </section>
+
+      <section class="tutor-description" aria-labelledby="titulo-descripcion">
+        <h2 class="section-title" id="titulo-descripcion">Descripción</h2>
+        <p class="description-box">Breve biografía y experiencia de tutor</p>
+      </section>
+
+      <section class="schedule" aria-labelledby="titulo-agenda">
+        <h2 class="section-title" id="titulo-agenda">Agendar sesión</h2>
+
+        <form class="login-form schedule-form" action="#" method="POST">
+          <div class="schedule-fields">
+            <div class="input-group">
+              <label class="sr-only" for="fecha">Selecciona fecha</label>
+              <input type="date" id="fecha" required>
+            </div>
+
+            <div class="input-group">
+              <label class="sr-only" for="horario">Selecciona horario</label>
+              <select id="horario" required>
+                <option value="" selected disabled>Selecciona horario</option>
+                <option>13:00</option>
+                <option>14:00</option>
+                <option>15:00</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Confirmar sesión</button>
+        </form>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+</html>

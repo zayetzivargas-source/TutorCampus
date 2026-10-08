@@ -1,0 +1,207 @@
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+  background-color: #e5977d;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.app-title {
+  font-size: 2.75rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  width: 90%;           /* Define qué porcentaje del contenedor usar (ej. 80%, 300px, etc.) */
+  margin-left: auto;     /* Centra el campo dentro de la tarjeta */
+  margin-right: auto;
+  margin-bottom: 0.85rem;
+}
+
+.input-group input {
+  width: 90%;
+  padding: 0.85rem 1rem;
+  background-color: #d8d8d8;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  color: #333333;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+
+
+.input-group input:focus {
+  background-color: #ffffff;
+  border-color: #aa3737;
+}
+
+.input-group input::placeholder {
+  color: #777777;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.85rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn:active {
+  transform: scale(0.99);
+}
+
+.btn-primary {
+  background-color: #aa3737;
+  color: #ffffff;
+}
+
+.btn-link {
+  text-decoration: none; /* Quita el subrayado azul por defecto */
+  width: 100%;           /* Mantiene el ancho completo */
+  display: block;
+}
+
+.btn-primary:hover {
+  background-color: #8e2d2d;
+}
+
+.divider-container {
+  margin: 1.5rem 0 1.25rem;
+  text-align: center;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  margin-bottom: 0.75rem;
+}
+
+.account-prompt {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.role-selection {
+  margin-top: 1.75rem;
+}
+
+.role-label {
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  color: #ffffff;
+}
+
+.role-buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.btn-role {
+  background-color: #aa3737;
+  color: #ffffff;
+  font-size: 0.9rem;
+  padding: 0.75rem;
+}
+
+.btn-role:hover {
+  background-color: #8e2d2d;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.btn-block {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin-top: 1rem;
+}
+
+.role-selection {
+  margin-bottom: 1.25rem;
+}
+
+.role-label {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.role-buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.btn-role {
+  background-color: #aa3737;
+  color: #ffffff;
+  font-size: 0.9rem;
+  padding: 0.75rem;
+}
+
+.btn-role:hover,
+.btn-role:focus {
+  background-color: #8e2d2d;
+}
+
+@media (max-width: 400px) {
+  .role-buttons {
+    flex-direction: column;
+  }
+}

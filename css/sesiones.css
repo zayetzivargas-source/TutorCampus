@@ -1,0 +1,236 @@
+/* Reset general y configuración de tipografía */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Fondo global de la página web */
+body {
+  background-color: #e5977d;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor fluido en la web */
+.page-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+/* Tarjeta principal del formulario */
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+/* Encabezados */
+.card-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.app-title {
+  font-size: 2.75rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* Estilos de la forma y campos de texto */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 1.25rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  background-color: #d8d8d8;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  color: #333333;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.input-group input:focus {
+  background-color: #ffffff;
+  border-color: #aa3737;
+}
+
+.input-group input::placeholder {
+  color: #777777;
+}
+
+/* Botones */
+.btn {
+  width: 100%;
+  padding: 0.85rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn:active {
+  transform: scale(0.99);
+}
+
+.btn-primary {
+  background-color: #aa3737;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #8e2d2d;
+}
+
+/* Separador horizontal */
+.divider-container {
+  margin: 1.5rem 0 1.25rem;
+  text-align: center;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  margin-bottom: 0.75rem;
+}
+
+.account-prompt {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Sección de selección de rol */
+.role-selection {
+  margin-top: 1.75rem;
+}
+
+.role-label {
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  color: #ffffff;
+}
+
+.role-buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.btn-role {
+  background-color: #aa3737;
+  color: #ffffff;
+  font-size: 0.9rem;
+  padding: 0.75rem;
+}
+
+.btn-role:hover {
+  background-color: #8e2d2d;
+}
+
+/* Adaptación responsive para pantallas muy pequeñas */
+@media (max-width: 400px) {
+  .role-buttons {
+    flex-direction: column;
+  }
+}
+
+body {
+  background-color: #e89478;
+}
+
+.sessions-wrapper{
+  min-height: 100vh;
+  background-color: #e89478;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.sessions.card {
+  width: 100%;
+  max-width: 420px;
+  padding: 32px 24px;
+  box-sizing: border-box;
+}
+
+.sessions-header {
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.sessions-header .app-title{
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0;
+}
+.sessions-subtitle{
+  color: #1a1a1a;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 0 16px 4px;
+}
+
+.tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.btn-tab {
+  flex: 1;
+  background-color: #E6E6E6;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 4px;
+  padding: 14px 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-tab:hover {
+  background-color: #d5d5d5;
+}
+
+
+.sessions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.session-item {
+  background-color: #E6E6E6;
+  color: #8a8a8a;
+  border-radius: 4px;
+  padding: 22px 18px;
+  font-size: 0.95rem;
+}

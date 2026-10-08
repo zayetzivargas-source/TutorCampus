@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TutorCampus - Dashboard</title>
+  
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <link rel="icon" type="image/png" href="../favicon/favicon.ico">
+</head>
+<body>
+
+  <div class="page-wrapper">
+    <main class="dashboard-card">
+      
+      <header class="dashboard-header">
+        <h1 class="app-title">TutorCampus</h1>
+        <h2 class="user-greeting">Hola, ...</h2>
+      </header>
+
+    <section class="search-section">
+      <div class="input-group">
+        <a href="buscarTutor.html" id="search-tutor-btn" class="btn btn-search">
+          Barra de Busquedas de tutorias
+        </a>
+      </div>
+    </section>
+
+      <section class="dashboard-section">
+        <a href="misSesiones.html" class="btn-link">
+          <h3 class="section-title">Proximas sesiones</h3>
+          <div class="info-card session-card">
+            <p class="session-info">
+              <strong>Sesion:</strong> Bases de datos - Hoy 5:00 pm - con tutor J. Pérez
+            </p>
+          </div>
+        </a>
+      </section>
+
+      <section class="dashboard-section">
+        <h3 class="section-title">Recomendado para tí</h3>
+        
+        <div class="tutors-grid">
+
+          <a href="perfilTutor.html" class="btn-link">
+            <article class="info-card tutor-card">
+              <h4 class="tutor-name">Tarjeta tutor 1</h4>
+              <p class="tutor-subject">Materia</p>
+              <p class="tutor-rating">Calificación</p>
+            </article>
+          </a>
+
+          <a href="perfilTutor.html" class="btn-link">
+            <article class="info-card tutor-card">
+              <h4 class="tutor-name">Tarjeta tutor 2</h4>
+              <p class="tutor-subject">Materia</p>
+              <p class="tutor-rating">Calificación</p>
+            </article>
+          </a>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+</html>

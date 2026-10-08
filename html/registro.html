@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TutorCampus - Crear Cuenta</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/png" href="../favicon/favicon.ico">
+</head>
+<body>
+
+  <div class="page-wrapper">
+    <main class="login-card">
+      <header class="card-header">
+        <h1 class="app-title">TutorCampus</h1>
+        <h2 class="subtitle">CREAR CUENTA</h2>
+      </header>
+
+      <form class="login-form" action="#" method="POST">
+
+        <div class="input-group">
+          <input type="text" id="fullname" placeholder="Nombre completo" required autocomplete="name">
+        </div>
+
+        <div class="input-group">
+          <input type="email" id="email" placeholder="Correo Institucional" required autocomplete="email">
+        </div>
+
+        <div class="input-group">
+          <div class="input-wrapper">
+            <input type="password" id="password" placeholder="Contraseña" required autocomplete="new-password">
+            <div class="tooltip-box">
+              La contraseña debe tener mínimo 8 caracteres.
+            </div>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <input type="password" id="confirm-password" placeholder="Confirmar contraseña" required autocomplete="new-password">
+        </div>
+
+        <div class="role-selection">
+          <p class="role-label">Regístrate como:</p>
+          <div class="role-buttons">
+            <button type="button" class="btn btn-role">Estudiante</button>
+            <button type="button" class="btn btn-role">Tutor</button>
+          </div>
+        </div>
+
+        <a href="dashboard.html" class="btn btn-primary btn-block">Registrarme</a>
+
+        <div class="divider-container">
+          <hr class="divider">
+          <a href="../index.html">
+            <p class="account-prompt">¿Ya tienes una cuenta?</p>
+          </a>
+        </div>
+
+        <a href="index.html" class="btn btn-secondary btn-block">Iniciar Sesión</a>
+      </form>
+    </main>
+  </div>
+
+</body>
+</html>

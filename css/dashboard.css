@@ -1,0 +1,113 @@
+.dashboard-card {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: #ffffff;
+}
+
+.dashboard-header {
+  text-align: center;
+}
+
+.user-greeting {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333333;
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 0.6rem;
+}
+
+.dashboard-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-card {
+  background-color: #d8d8d8;
+  border-radius: 4px;
+  padding: 1rem;
+  color: #777777;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Tarjeta de próximas sesiones */
+.session-card {
+  width: 100%;
+}
+
+.session-info {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.session-info strong,
+.tutor-name {
+  color: #555555;
+  font-weight: 600;
+}
+
+.tutors-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.tutor-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-height: 120px;
+}
+
+.tutor-name {
+  font-size: 0.95rem;
+}
+
+.tutor-subject,
+.tutor-rating {
+  font-size: 0.85rem;
+}
+
+.btn-search {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinea el texto a la izquierda como un placeholder */
+  width: 100%;
+  padding: 0.85rem 1rem;
+  background-color: #d8d8d8;
+  color: #777777; /* Simula el color del texto placeholder */
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-weight: normal;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-search:hover {
+  background-color: #cccccc;
+  color: #555555;
+}
+
+.btn-search:active {
+  transform: scale(0.99);
+}
+
+@media (max-width: 420px) {
+  .tutors-grid {
+    grid-template-columns: 1fr;
+  }
+}

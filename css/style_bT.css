@@ -1,0 +1,27 @@
+.buscar-Tutor{
+    margin-top: 1.75rem;
+}
+
+.buscar-Tutor select{
+  width: 100%;
+  padding: 0.85rem 1rem;
+  background-color: #d8d8d8;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  color: #333333;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.input-Tutor{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+
+.input-Tutor input{
+    height: 8rem;
+}

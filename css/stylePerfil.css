@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+  background-color: #e5977d;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  gap: 1.75rem;
+}
+
+.profile-card .card-header {
+  margin-bottom: 0;
+}
+
+.tutor-info {
+  display: grid;
+  grid-template-columns: 8.5rem 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.tutor-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background-color: #d8d8d8;
+  border-radius: 4px;
+}
+
+.tutor-data {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-top: 0.5rem;
+  color: #1e1e1e;
+  font-size: 0.95rem;
+}
+
+.tutor-name {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.section-title {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #1e1e1e;
+  margin-bottom: 0.6rem;
+}
+
+.description-box {
+  min-height: 5.5rem;
+  padding: 0.85rem 1rem;
+  background-color: #d8d8d8;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  color: #777777;
+}
+
+.schedule-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.schedule-fields .input-group {
+  margin-bottom: 0;
+}
+
+.input-group select,
+.input-group input[type="date"] {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  background-color: #d8d8d8;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  color: #333333;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.input-group select:focus {
+  background-color: #ffffff;
+  border-color: #aa3737;
+}
+
+.schedule-form .btn {
+  margin-top: 1.5rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
+@media (max-width: 400px) {
+  .tutor-info,
+  .schedule-fields {
+    grid-template-columns: 1fr;
+  }
+}
